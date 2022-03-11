@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
     this.aliServiceService.getloginInformation(this.loginForm.value).subscribe(
       (getLog:any) => {
         localStorage.setItem('userData',JSON.stringify(getLog));
-         this._router.navigate(['/home']);
+         this._router.navigate(['/home/blog']);
                 console.log(getLog);
       }
       );
